@@ -9,6 +9,8 @@
 
 **Hiragana Hero** is a modern, gamified web application designed to help users learn Japanese Hiragana effectively. Built with React and TypeScript, it offers a seamless learning experience through multiple interactive modes.
 
+> **📱 Coming to Mobile:** Check out our [Mobile App Roadmap](./README_MOBILE.md) to see how we are bringing Hiragana Hero to iOS and Android!
+
 What sets Hiragana Hero apart is its integration with **Google's Gemini AI**, providing intelligent feedback and context-aware assistance in the "Word Builder" mode, making the learning process not just about memorization, but about understanding and application.
 
 ## ✨ Key Features
