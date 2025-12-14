@@ -1,0 +1,303 @@
+import { Kana, AppLanguage, VocabTopic } from './types';
+
+export const HIRAGANA_DATA: Kana[] = [
+  // A-row
+  { char: 'あ', romaji: 'a', category: 'monograph', row: 'a' },
+  { char: 'い', romaji: 'i', category: 'monograph', row: 'a' },
+  { char: 'う', romaji: 'u', category: 'monograph', row: 'a' },
+  { char: 'え', romaji: 'e', category: 'monograph', row: 'a' },
+  { char: 'お', romaji: 'o', category: 'monograph', row: 'a' },
+  // Ka-row
+  { char: 'か', romaji: 'ka', category: 'monograph', row: 'ka' },
+  { char: 'き', romaji: 'ki', category: 'monograph', row: 'ka' },
+  { char: 'く', romaji: 'ku', category: 'monograph', row: 'ka' },
+  { char: 'け', romaji: 'ke', category: 'monograph', row: 'ka' },
+  { char: 'こ', romaji: 'ko', category: 'monograph', row: 'ka' },
+  // Sa-row
+  { char: 'さ', romaji: 'sa', category: 'monograph', row: 'sa' },
+  { char: 'し', romaji: 'shi', category: 'monograph', row: 'sa' },
+  { char: 'す', romaji: 'su', category: 'monograph', row: 'sa' },
+  { char: 'せ', romaji: 'se', category: 'monograph', row: 'sa' },
+  { char: 'そ', romaji: 'so', category: 'monograph', row: 'sa' },
+  // Ta-row
+  { char: 'た', romaji: 'ta', category: 'monograph', row: 'ta' },
+  { char: 'ち', romaji: 'chi', category: 'monograph', row: 'ta' },
+  { char: 'つ', romaji: 'tsu', category: 'monograph', row: 'ta' },
+  { char: 'て', romaji: 'te', category: 'monograph', row: 'ta' },
+  { char: 'と', romaji: 'to', category: 'monograph', row: 'ta' },
+  // Na-row
+  { char: 'な', romaji: 'na', category: 'monograph', row: 'na' },
+  { char: 'に', romaji: 'ni', category: 'monograph', row: 'na' },
+  { char: 'ぬ', romaji: 'nu', category: 'monograph', row: 'na' },
+  { char: 'ね', romaji: 'ne', category: 'monograph', row: 'na' },
+  { char: 'の', romaji: 'no', category: 'monograph', row: 'na' },
+  // Ha-row
+  { char: 'は', romaji: 'ha', category: 'monograph', row: 'ha' },
+  { char: 'ひ', romaji: 'hi', category: 'monograph', row: 'ha' },
+  { char: 'ふ', romaji: 'fu', category: 'monograph', row: 'ha' },
+  { char: 'へ', romaji: 'he', category: 'monograph', row: 'ha' },
+  { char: 'ほ', romaji: 'ho', category: 'monograph', row: 'ha' },
+  // Ma-row
+  { char: 'ま', romaji: 'ma', category: 'monograph', row: 'ma' },
+  { char: 'み', romaji: 'mi', category: 'monograph', row: 'ma' },
+  { char: 'む', romaji: 'mu', category: 'monograph', row: 'ma' },
+  { char: 'め', romaji: 'me', category: 'monograph', row: 'ma' },
+  { char: 'も', romaji: 'mo', category: 'monograph', row: 'ma' },
+  // Ya-row
+  { char: 'や', romaji: 'ya', category: 'monograph', row: 'ya' },
+  { char: 'ゆ', romaji: 'yu', category: 'monograph', row: 'ya' },
+  { char: 'よ', romaji: 'yo', category: 'monograph', row: 'ya' },
+  // Ra-row
+  { char: 'ら', romaji: 'ra', category: 'monograph', row: 'ra' },
+  { char: 'り', romaji: 'ri', category: 'monograph', row: 'ra' },
+  { char: 'る', romaji: 'ru', category: 'monograph', row: 'ra' },
+  { char: 'れ', romaji: 're', category: 'monograph', row: 'ra' },
+  { char: 'ろ', romaji: 'ro', category: 'monograph', row: 'ra' },
+  // Wa-row
+  { char: 'わ', romaji: 'wa', category: 'monograph', row: 'wa' },
+  { char: 'を', romaji: 'wo', category: 'monograph', row: 'wa' },
+  { char: 'ん', romaji: 'n', category: 'monograph', row: 'wa' },
+  
+  // --- Dakuten (Voiced) ---
+  // Ga-row
+  { char: 'が', romaji: 'ga', category: 'diacritic', row: 'ga' },
+  { char: 'ぎ', romaji: 'gi', category: 'diacritic', row: 'ga' },
+  { char: 'ぐ', romaji: 'gu', category: 'diacritic', row: 'ga' },
+  { char: 'げ', romaji: 'ge', category: 'diacritic', row: 'ga' },
+  { char: 'ご', romaji: 'go', category: 'diacritic', row: 'ga' },
+  // Za-row
+  { char: 'ざ', romaji: 'za', category: 'diacritic', row: 'za' },
+  { char: 'じ', romaji: 'ji', category: 'diacritic', row: 'za' },
+  { char: 'ず', romaji: 'zu', category: 'diacritic', row: 'za' },
+  { char: 'ぜ', romaji: 'ze', category: 'diacritic', row: 'za' },
+  { char: 'ぞ', romaji: 'zo', category: 'diacritic', row: 'za' },
+  // Da-row
+  { char: 'だ', romaji: 'da', category: 'diacritic', row: 'da' },
+  { char: 'ぢ', romaji: 'ji', category: 'diacritic', row: 'da' },
+  { char: 'づ', romaji: 'zu', category: 'diacritic', row: 'da' },
+  { char: 'で', romaji: 'de', category: 'diacritic', row: 'da' },
+  { char: 'ど', romaji: 'do', category: 'diacritic', row: 'da' },
+  // Ba-row
+  { char: 'ば', romaji: 'ba', category: 'diacritic', row: 'ba' },
+  { char: 'び', romaji: 'bi', category: 'diacritic', row: 'ba' },
+  { char: 'ぶ', romaji: 'bu', category: 'diacritic', row: 'ba' },
+  { char: 'べ', romaji: 'be', category: 'diacritic', row: 'ba' },
+  { char: 'ぼ', romaji: 'bo', category: 'diacritic', row: 'ba' },
+  // Pa-row
+  { char: 'ぱ', romaji: 'pa', category: 'diacritic', row: 'pa' },
+  { char: 'ぴ', romaji: 'pi', category: 'diacritic', row: 'pa' },
+  { char: 'ぷ', romaji: 'pu', category: 'diacritic', row: 'pa' },
+  { char: 'ぺ', romaji: 'pe', category: 'diacritic', row: 'pa' },
+  { char: 'ぽ', romaji: 'po', category: 'diacritic', row: 'pa' },
+];
+
+export const ROWS = ['a', 'ka', 'sa', 'ta', 'na', 'ha', 'ma', 'ya', 'ra', 'wa', 'ga', 'za', 'da', 'ba', 'pa'];
+
+export const VOCAB_TOPICS: VocabTopic[] = [
+  {
+    id: 'greetings',
+    title: { [AppLanguage.ENG]: 'Greetings', [AppLanguage.UZB]: 'Salomlashish', [AppLanguage.RUS]: 'Приветствия', [AppLanguage.DEU]: 'Begrüßungen', [AppLanguage.JPN]: '挨拶' },
+    words: [
+      { id: '1', japanese: 'こんにちは', romaji: 'konnichiwa', meaning: 'Hello' },
+      { id: '2', japanese: 'ありがとう', romaji: 'arigatou', meaning: 'Thank you' },
+      { id: '3', japanese: 'さようなら', romaji: 'sayounara', meaning: 'Goodbye' },
+      { id: '4', japanese: 'おはよう', romaji: 'ohayou', meaning: 'Good morning' },
+      { id: '5', japanese: 'おやすみ', romaji: 'oyasumi', meaning: 'Good night' },
+      { id: '6', japanese: 'はじめまして', romaji: 'hajimemashite', meaning: 'Nice to meet you' },
+    ]
+  },
+  {
+    id: 'numbers',
+    title: { [AppLanguage.ENG]: 'Numbers', [AppLanguage.UZB]: 'Sonlar', [AppLanguage.RUS]: 'Числа', [AppLanguage.DEU]: 'Zahlen', [AppLanguage.JPN]: '数字' },
+    words: [
+      { id: 'n1', japanese: 'いち', romaji: 'ichi', meaning: 'One' },
+      { id: 'n2', japanese: 'に', romaji: 'ni', meaning: 'Two' },
+      { id: 'n3', japanese: 'さん', romaji: 'san', meaning: 'Three' },
+      { id: 'n4', japanese: 'よん', romaji: 'yon', meaning: 'Four' },
+      { id: 'n5', japanese: 'ご', romaji: 'go', meaning: 'Five' },
+      { id: 'n6', japanese: 'ろく', romaji: 'roku', meaning: 'Six' },
+      { id: 'n7', japanese: 'なな', romaji: 'nana', meaning: 'Seven' },
+      { id: 'n8', japanese: 'はち', romaji: 'hachi', meaning: 'Eight' },
+      { id: 'n9', japanese: 'きゅう', romaji: 'kyuu', meaning: 'Nine' },
+      { id: 'n10', japanese: 'じゅう', romaji: 'juu', meaning: 'Ten' },
+    ]
+  },
+  {
+    id: 'colors',
+    title: { [AppLanguage.ENG]: 'Colors', [AppLanguage.UZB]: 'Ranglar', [AppLanguage.RUS]: 'Цвета', [AppLanguage.DEU]: 'Farben', [AppLanguage.JPN]: '色' },
+    words: [
+      { id: 'c1', japanese: 'あか', romaji: 'aka', meaning: 'Red' },
+      { id: 'c2', japanese: 'あお', romaji: 'ao', meaning: 'Blue' },
+      { id: 'c3', japanese: 'しろ', romaji: 'shiro', meaning: 'White' },
+      { id: 'c4', japanese: 'くろ', romaji: 'kuro', meaning: 'Black' },
+      { id: 'c5', japanese: 'きいろ', romaji: 'kiiro', meaning: 'Yellow' },
+      { id: 'c6', japanese: 'みどり', romaji: 'midori', meaning: 'Green' },
+    ]
+  },
+  {
+    id: 'family',
+    title: { [AppLanguage.ENG]: 'Family', [AppLanguage.UZB]: 'Oila', [AppLanguage.RUS]: 'Семья', [AppLanguage.DEU]: 'Familie', [AppLanguage.JPN]: '家族' },
+    words: [
+      { id: 'f1', japanese: 'かぞく', romaji: 'kazoku', meaning: 'Family' },
+      { id: 'f2', japanese: 'ちち', romaji: 'chichi', meaning: 'Father (my)' },
+      { id: 'f3', japanese: 'はは', romaji: 'haha', meaning: 'Mother (my)' },
+      { id: 'f4', japanese: 'あに', romaji: 'ani', meaning: 'Older Brother' },
+      { id: 'f5', japanese: 'あね', romaji: 'ane', meaning: 'Older Sister' },
+      { id: 'f6', japanese: 'おとうと', romaji: 'otouto', meaning: 'Younger Brother' },
+      { id: 'f7', japanese: 'いもうと', romaji: 'imouto', meaning: 'Younger Sister' },
+    ]
+  },
+  {
+    id: 'food',
+    title: { [AppLanguage.ENG]: 'Food', [AppLanguage.UZB]: 'Oziq-ovqat', [AppLanguage.RUS]: 'Еда', [AppLanguage.DEU]: 'Essen', [AppLanguage.JPN]: '食べ物' },
+    words: [
+      { id: 'fd1', japanese: 'たべもの', romaji: 'tabemono', meaning: 'Food' },
+      { id: 'fd2', japanese: 'みず', romaji: 'mizu', meaning: 'Water' },
+      { id: 'fd3', japanese: 'ごはん', romaji: 'gohan', meaning: 'Rice / Meal' },
+      { id: 'fd4', japanese: 'パン', romaji: 'pan', meaning: 'Bread' },
+      { id: 'fd5', japanese: 'さかな', romaji: 'sakana', meaning: 'Fish' },
+      { id: 'fd6', japanese: 'にく', romaji: 'niku', meaning: 'Meat' },
+      { id: 'fd7', japanese: 'おいしい', romaji: 'oishii', meaning: 'Delicious' },
+    ]
+  },
+  {
+    id: 'time',
+    title: { [AppLanguage.ENG]: 'Time', [AppLanguage.UZB]: 'Vaqt', [AppLanguage.RUS]: 'Время', [AppLanguage.DEU]: 'Zeit', [AppLanguage.JPN]: '時間' },
+    words: [
+      { id: 't1', japanese: 'いま', romaji: 'ima', meaning: 'Now' },
+      { id: 't2', japanese: 'きょう', romaji: 'kyou', meaning: 'Today' },
+      { id: 't3', japanese: 'あした', romaji: 'ashita', meaning: 'Tomorrow' },
+      { id: 't4', japanese: 'きのう', romaji: 'kinou', meaning: 'Yesterday' },
+      { id: 't5', japanese: 'まいにち', romaji: 'mainichi', meaning: 'Every day' },
+      { id: 't6', japanese: 'じかん', romaji: 'jikan', meaning: 'Time' },
+    ]
+  }
+];
+
+export const TRANSLATIONS = {
+  [AppLanguage.ENG]: {
+    study: "Study",
+    quiz: "Quiz",
+    build: "Word Builder",
+    memorize: "Memorize",
+    score: "Score",
+    highScore: "High Score",
+    correct: "Correct!",
+    wrong: "Wrong",
+    examples: "Examples",
+    analyze: "Check Meaning",
+    clear: "Clear",
+    loading: "Checking...",
+    selectRow: "Quiz Limit (Include up to):",
+    markLearned: "Mark as Learned",
+    learned: "Learned",
+    myWords: "My Words",
+    addWord: "Add Word",
+    practice: "Practice",
+    topics: "Topics",
+    startQuiz: "Start Quiz",
+    flip: "Flip Card",
+    mastered: "Mastered",
+    reset: "Reset Progress"
+  },
+  [AppLanguage.UZB]: {
+    study: "O'rganish",
+    quiz: "Test",
+    build: "So'z Yasash",
+    memorize: "Yodlash",
+    score: "Ball",
+    highScore: "Rekord",
+    correct: "To'g'ri!",
+    wrong: "Xato",
+    examples: "Misollar",
+    analyze: "Tekshirish",
+    clear: "Tozalash",
+    loading: "Tekshirilmoqda...",
+    selectRow: "Cheklov (Qaysigacha):",
+    markLearned: "O'rgandim",
+    learned: "O'rganildi",
+    myWords: "Mening so'zlarim",
+    addWord: "So'z qo'shish",
+    practice: "Mashq",
+    topics: "Mavzular",
+    startQuiz: "Boshlash",
+    flip: "Aylantirish",
+    mastered: "O'zlashtirildi",
+    reset: "Qayta boshlash"
+  },
+  [AppLanguage.RUS]: {
+    study: "Учить",
+    quiz: "Тест",
+    build: "Конструктор",
+    memorize: "Запомнить",
+    score: "Счет",
+    highScore: "Рекорд",
+    correct: "Верно!",
+    wrong: "Неверно",
+    examples: "Примеры",
+    analyze: "Проверить",
+    clear: "Очистить",
+    loading: "Проверка...",
+    selectRow: "Лимит (До какого ряда):",
+    markLearned: "Выучил",
+    learned: "Выучено",
+    myWords: "Мои слова",
+    addWord: "Добавить слово",
+    practice: "Практика",
+    topics: "Темы",
+    startQuiz: "Начать",
+    flip: "Перевернуть",
+    mastered: "Выучено",
+    reset: "Сброс"
+  },
+  [AppLanguage.DEU]: {
+    study: "Lernen",
+    quiz: "Quiz",
+    build: "Wortbau",
+    memorize: "Merken",
+    score: "Punktzahl",
+    highScore: "Bestwert",
+    correct: "Richtig!",
+    wrong: "Falsch",
+    examples: "Beispiele",
+    analyze: "Prüfen",
+    clear: "Löschen",
+    loading: "Prüfen...",
+    selectRow: "Limit (Bis Reihe):",
+    markLearned: "Gelernt",
+    learned: "Gelernt",
+    myWords: "Meine Wörter",
+    addWord: "Wort hinzufügen",
+    practice: "Üben",
+    topics: "Themen",
+    startQuiz: "Starten",
+    flip: "Umdrehen",
+    mastered: "Gemeistert",
+    reset: "Zurücksetzen"
+  },
+  [AppLanguage.JPN]: {
+    study: "勉強",
+    quiz: "クイズ",
+    build: "言葉作り",
+    memorize: "暗記",
+    score: "点数",
+    highScore: "ハイスコア",
+    correct: "正解！",
+    wrong: "不正解",
+    examples: "例文",
+    analyze: "意味を確認",
+    clear: "クリア",
+    loading: "確認中...",
+    selectRow: "範囲 (ここまで):",
+    markLearned: "覚えた",
+    learned: "済み",
+    myWords: "単語帳",
+    addWord: "単語追加",
+    practice: "練習",
+    topics: "トピック",
+    startQuiz: "開始",
+    flip: "めくる",
+    mastered: "マスター",
+    reset: "リセット"
+  }
+};
