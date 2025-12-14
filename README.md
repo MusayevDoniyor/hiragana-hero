@@ -44,7 +44,7 @@ Follow these steps to set up the project locally.
 1.  **Clone the repository**
 
     ```bash
-    git clone https://github.com/kaizo/hiragana-hero.git
+    git clone https://github.com/MusayevDoniyor/hiragana-hero.git
     cd hiragana-hero
     ```
 
@@ -93,9 +93,9 @@ Distributed under the MIT License. See `package.json` for more information.
 
 ## 👤 Author
 
-**Kaizo**
+**Doniyor Musayev**
 
-- GitHub: [@kaizo](https://github.com/kaizo)
+- GitHub: [@MusayevDoniyor](https://github.com/MusayevDoniyor)
 
 ---
 

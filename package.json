@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "An interactive Japanese Hiragana learning companion powered by AI. Master the basics, quiz yourself, and learn to build words with intelligent feedback.",
-  "author": "Kaizo",
+  "author": "Doniyor Musayev",
   "license": "MIT",
   "homepage": "https://github.com/MusayevDoniyor/hiragana-hero#readme",
   "repository": {
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/MusayevDoniyor/hiragana-hero.git"
   },
   "bugs": {
-    "url": "https://github.com/kaizo/hiragana-hero/issues"
+    "url": "https://github.com/MusayevDoniyor/hiragana-hero/issues"
   },
   "keywords": [
     "japanese",
