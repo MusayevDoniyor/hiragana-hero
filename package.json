@@ -1,8 +1,35 @@
 {
   "name": "hiragana-hero",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "An interactive Japanese Hiragana learning companion powered by AI. Master the basics, quiz yourself, and learn to build words with intelligent feedback.",
+  "author": "Kaizo",
+  "license": "MIT",
+  "homepage": "https://github.com/MusayevDoniyor/hiragana-hero#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MusayevDoniyor/hiragana-hero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaizo/hiragana-hero/issues"
+  },
+  "keywords": [
+    "japanese",
+    "hiragana",
+    "learning",
+    "education",
+    "ai",
+    "gemini",
+    "react",
+    "typescript",
+    "vite",
+    "tailwindcss",
+    "gamification",
+    "quiz",
+    "flashcards",
+    "study-tool"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,9 +37,9 @@
   },
   "dependencies": {
     "@google/genai": "^1.33.0",
-    "react-dom": "18.3.1",
+    "lucide-react": "0.344.0",
     "react": "18.3.1",
-    "lucide-react": "0.344.0"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
